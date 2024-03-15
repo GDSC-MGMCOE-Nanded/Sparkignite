@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+/* 
 .title {
    display: flex;
    align-items: center;
@@ -13,12 +13,22 @@
 
 .title>* {
    width: min(100%, 900px);
-}
+} */
+
+.title img {
+   height: 2000px;
+   width: 200px;
+   border-radius: 100px;
+
+      /* width: min(100%, 150px);
+      height: min(100%, 110px); */
+      object-fit: contain;
+   }
 
 
 
 .title img {
-   height: 480px;
+   height: 4800px;
    width: 480px;
 
       /* width: min(100%, 150px);
@@ -621,6 +631,10 @@ nav .button {
 
 /* about */
 /* ============================================================ */
+.banner{
+   height: min-content;
+   width: min-content;
+}
 .about {
    background-color: #F4F4F4;
    display: flex;
@@ -1136,10 +1150,11 @@ nav .button {
    width: 32px;
 }
 span{
-   color: rgb(209, 189, 129);
+   color: rgb(157, 121, 113);
 }
 g{
-   color: blue;
+   color: rgb(61, 61, 128);
+   color-scheme: bold;
 }
 d{
    color: red;
@@ -1151,7 +1166,7 @@ c{
    color: yellow;
 }
 footer {
-   background-color: #380b3e;
+   background-color: #481f4e;
    display: flex;
    align-items: center;
    justify-content: center;
