@@ -631,10 +631,10 @@ nav .button {
 
 /* about */
 /* ============================================================ */
-.banner{
+/* .banner{
    height: min-content;
    width: min-content;
-}
+} */
 .about {
    background-color: #F4F4F4;
    display: flex;
