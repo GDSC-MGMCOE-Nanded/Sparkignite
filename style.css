@@ -16,7 +16,7 @@
 } */
 
 .title img {
-   height: 2000px;
+   height: 200px;
    width: 200px;
    border-radius: 100px;
 
@@ -526,7 +526,7 @@ nav .button {
    position: absolute;
    left: -35px;
    content: ' ';
-   background-image: url('assets/polygon.svg');
+   background-image: url('./polygon.svg');
    background-size: 20px 20px;
    height: 20px;
    width: 20px;
@@ -621,7 +621,7 @@ nav .button {
    top: 6px;
    margin-right: 6px;
    content: ' ';
-   background-image: url('assets/location.svg');
+   background-image: url('./location.svg');
    background-size: 25px 25px;
    height: 25px;
    width: 25px;
@@ -631,10 +631,10 @@ nav .button {
 
 /* about */
 /* ============================================================ */
-/* .banner{
+.banner{
    height: min-content;
    width: min-content;
-} */
+}
 .about {
    background-color: #F4F4F4;
    display: flex;
@@ -983,8 +983,8 @@ nav .button {
 
    -webkit-mask-size: cover;
    mask-size: cover;
-   -webkit-mask-image: url(assets/triangle.svg);
-   mask-image: url(assets/triangle.svg);
+   -webkit-mask-image: url(./triangle.svg);
+   mask-image: url(./triangle.svg);
 
    background-color: #4285F4;
    background-size: 40px;
@@ -1021,6 +1021,7 @@ nav .button {
 }
 
 .sponsors .swiper {
+   overflow-x: visible;
    padding: 20px 0;
 }
 
