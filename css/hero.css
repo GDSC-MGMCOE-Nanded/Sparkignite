@@ -1,0 +1,200 @@
+.hero {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero .section-title {
+    background: #c9c9c993;
+    border-radius: 30px;
+}
+
+.hero .section-title span {
+    color: #ff0000;
+    font-size: 36px;
+}
+
+.hero .postarcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin: 0 auto;
+    border-radius: 30px;
+    /* background: #000; */
+}
+
+.hero .postarcontainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s all ease-in-out;
+    margin-top: 100px;
+
+}
+
+.hero .description {
+    font-weight: 500;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: clamp(0px, 1.8vh, 20px);
+}
+
+.hero .starts-in {
+    font-weight: 700;
+    font-size: clamp(1rem, 2.6vw, 1.1rem);
+    margin: 0;
+    margin-top: 10px;
+}
+
+.counter-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.counter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(5px, 2vw, 20px);
+}
+
+.hero .button {
+    padding-block: 10px;
+}
+
+.hero .register-button {
+    position: relative;
+}
+
+.hero .register-button::before,
+.hero .register-button::after {
+    display: inline-block;
+    position: absolute;
+    left: -35px;
+    content: ' ';
+    background-image: url('./polygon.svg');
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+
+    /* center vertically */
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.hero .register-button::after {
+    left: auto;
+    right: -35px;
+    transform: translate(0, -50%) rotate(180deg);
+}
+
+.gdsc-logo {
+    margin-top: 25px;
+    height: 60px;
+}
+
+.shape {
+    position: absolute;
+    z-index: -1;
+    top: 20vh;
+    height: min(40vh, 400px);
+}
+
+.circle {
+    right: 0;
+}
+
+.square {
+    left: 0;
+}
+
+.counter div {
+    width: clamp(50px, 14vw, 80px);
+    padding: 10px;
+    background-color: #4285F4;
+    color: white;
+    font-weight: bold;
+    transition: all 200ms;
+}
+
+.counter div:hover {
+    scale: 1.05;
+    cursor: pointer;
+    box-shadow: 1px 8px 12px 0px rgba(0, 0, 0, 0.3);
+}
+
+.counter div p {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: clamp(0.8rem, 3vw, 0.9rem);
+}
+
+.counter div h1 {
+    margin: 0;
+    font-size: clamp(1.8rem, 7vw, 2.8rem);
+}
+
+.counter .days {
+    background-color: #FBBC05;
+}
+
+.counter .hours {
+    background-color: #4285F4;
+}
+
+.counter .minutes {
+    background-color: #FF0000;
+}
+
+.counter .seconds {
+    transition: scale background-color 200ms;
+    background-color: #c2c2c2;
+}
+
+
+
+.location {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 22px;
+}
+
+.location::before {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    margin-right: 6px;
+    content: ' ';
+    background-image: url('./location.svg');
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+}
+
+
+@media screen and (max-width:695px) {
+    .hero .section-title span {
+        font-size: 25px;
+    }
+
+    .hero .postarcontainer {
+        margin-top: 0;
+    }
+
+    .hero .postarcontainer img {
+        margin-top: 0;
+    }
+}

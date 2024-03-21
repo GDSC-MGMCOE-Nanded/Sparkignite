@@ -1,0 +1,23 @@
+.collegeImg {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s all ease-in-out;
+    margin-top: 100px;
+}
+
+/* mediaquires */
+
+@media only screen and (max-width: 950px) {
+    .collegeImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: 0.2s all ease-in-out;
+        margin-top: 100px;
+    }
+}

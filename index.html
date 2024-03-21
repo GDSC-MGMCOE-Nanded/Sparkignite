@@ -8,6 +8,16 @@
    <link rel="shortcut icon" href="assets/fav.png" type="image/x-icon">
    <link rel="stylesheet" href="style.css">
 
+   <link rel="stylesheet" href="./css/header.css">
+   <link rel="stylesheet" href="./css/collegeImg.css">
+   <link rel="stylesheet" href="./css/hero.css">
+   <link rel="stylesheet" href="./css/about.css">
+   <link rel="stylesheet" href="./css/timeline.css">
+   <link rel="stylesheet" href="./css/mentor.css">
+   <link rel="stylesheet" href="./css/contact.css">
+   <link rel="stylesheet" href="./css/footer.css">
+
+
    <!-- Link Swiper's CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
@@ -18,61 +28,64 @@
 </head>
 
 <body>
-   <h1>HackVenture</h1>
-   <div id="home"></div>
-   <div class="nav-wrapper">
-      <div class="hamburger show-padding">
-         <div class="line1"></div>
-         <div class="line2"></div>
-         <div class="line3"></div>
-      </div>
-      <!-- <img class="hello" src="./img/l.png"> -->
-      <h1><hat>Hack</hat><mat>Venture</mat></h1>
+   <!-- header -->
+   <header class="header">
       <nav>
-         <!-- <img class="logo" src="./img/logo.png"> -->
-         <div class="divider"></div>
-         <ul class="links">
-            <li><a href="#home">
-                  <p>Home</p>
-               </a></li>
-            <li><a href="#about">
-                  <p>About</p>
-               </a></li>
-            <li><a href="#timeline">
-                  <p>Timeline</p>
-               </a></li>
-            <li><a href="#workshops">
-                  <p>Workshops</p>
-               </a></li>
-            <li><a href="#sponsors">
-                  <p>Sponsors</p>
-               </a></li>
-            <a href="https://forms.gle/fF2wuDDzEnkDBaZz6" class="button">Register</a>
+         <div class="logo">
+            <a href="./index.html">Hack<span>Venture</span></a>
+         </div>
+         <input type="checkbox" id="menu-toggle">
+         <label for="menu-toggle" class="menu-icon">&#9776;</label>
+         <ul class="menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#aboutus">About</a></li>
+            <li><a href="#events">Timeline</a></li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Contact Us</a></li>
          </ul>
       </nav>
-   </div>
+   </header>
+   <!-- header end -->
 
 
- 
-   <div id="sponsors">
-   <section class="title">
-      <div class="title img"><img src="./college.png" alt=""></div>
-   </section>
-   </div>
 
-   <section class="hero">
+   <!-- collegeImg -->
+   <img class="collegeImg" src="./college.png" alt="">
+   <!-- collegeImg end -->
+
+
+   <section id="hero" class="hero">
       <img class="shape circle" src="./circle.svg" alt="">
       <img class="shape square" src="./square.svg" alt="">
-      <h1 data-aos="fade-up" class="section-title"><span style="font-size: 60px;">#<cl style="color: red;">Hack</cl><ve style="color: black;">Venture</ve></span><font style="font-size: 40px; color: blue;"> Event is HERE!</font><div><br><img src="./HackVenture.png" alt=""></div></h1>
-      <p data-aos="fade-up" class="description">Ideathon is an event parallel to a hackathon in which people will come up with novel solutions to industry problems. This event is designed to test participants' knowledge obtained in their courses and apply it to the real world.
+      <h1 data-aos="fade-up" class="section-title"><span>#Hack
+            <span style="color: black;">Venture</span>
+         </span>
+
+         <span style=" color: blue;"> Event is HERE!</span>
+         <br>
+         <div class="postarcontainer">
+
+            <img src="./HackVenture2.png" alt="">
+         </div>
+      </h1>
+      <p data-aos="fade-up" class="description">Ideathon is an event parallel to a hackathon in which people will come
+         up with novel solutions to industry problems. This event is designed to test participants' knowledge obtained
+         in their courses and apply it to the real world.
       </p>
 
       <div>
-         <h1 style="font-size: 40px;">Sub-events in <Hack style="color: red;">Hack</Hack><venture style="color: black;">Venture</venture></h1>
+         <h1 style="font-size: 40px;">Sub-events in <Hack style="color: red;">Hack</Hack>
+            <venture style="color: black;">Venture</venture>
+         </h1>
          <div>
-         <h2>1. SparkIgnite Ideathon <live style="color: red; background-color: yellow;"><b>Live</b></live></h2>
-         <h2>2. Industrial Training <live style="color: aqua; background-color: black;"><b>Coming Soon</b></live></h2>
-         <h2>3. Google-Athon <live style="color: aqua; background-color: black"><b>Coming Soon</b></live></h2>
+            <h2>1. SparkIgnite Ideathon <live style="color: red; background-color: yellow;"><b>Live</b></live>
+            </h2>
+            <h2>2. Industrial Training <live style="color: aqua; background-color: black;"><b>Coming Soon</b></live>
+            </h2>
+            <h2>3. Google-Athon <live style="color: aqua; background-color: black"><b>Coming Soon</b></live>
+            </h2>
          </div>
       </div>
 
@@ -101,7 +114,9 @@
             </div>
          </div>
       </div>
-      <h3><i class="location"><a href="https://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttu"></i>MGMCOE Nanded India-431606 </h3></a>
+      <h3><i class="location"><a
+               href="https://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttuhttps://www.google.com/maps/place/MGM's+College+Of+Engineering/@19.1798607,77.3182777,15.82z/data=!4m12!1m5!3m4!2zMTnCsDEwJzM2LjMiTiA3N8KwMTknMzAuOCJF!8m2!3d19.176753!4d77.325225!3m5!1s0x3bd1d6fbe138ad81:0x9e88bbe86ec52250!8m2!3d19.1797222!4d77.3242529!16s%2Fg%2F1jkx8zyw3?entry=ttu"></i>MGMCOE
+         Nanded India-431606 </h3></a>
 
       <h1 style="color: navy;"><b>Want to Participate in SparkIgnite Ideathon?</b></h1>
       <br>
@@ -111,17 +126,16 @@
       <img class="gdsc-logo" src="./gdsc.png" alt="">
    </section>
 
-   <div id="about"></div>
-   <section class="about">
+   <section id="about" class="about">
       <h1 data-aos="zoom-in" class="section-title"><span class="green">#About</span> The Event</h1>
-      <p class="description">This is an event parallel to a hackathon in which people will come up with novel solutions to industry problems. This event is designed to test participants' knowledge obtained in their courses and apply it to the real world.
+      <p class="description">This is an event parallel to a hackathon in which people will come up with novel solutions
+         to industry problems. This event is designed to test participants' knowledge obtained in their courses and
+         apply it to the real world.
       </p>
    </section>
 
 
-   <div class="banner"> 
-      <div><img src="./bann.png" alt=""></div>
-   </div>
+   <img class="bannerImg" src="./bann2.png" alt="">
 
 
    <div>
@@ -135,314 +149,228 @@
             <h2 style="color: rgb(27, 113, 27);">5. Digital Sustainability</h2>
             <h2 style="color: rgb(68, 113, 113);">6. Open Innovation</h2>
          </ul>
-         
+
       </div>
    </div>
+   <!-- <div id="timeline"></div> -->
+
+
    <div id="timeline"></div>
-   <section class="timeline">
-      <h1 data-aos="zoom-in" class="section-title"><span class="yellow">#Event</span> Timeline</h1>
-      <div class="event-wrapper">
-         <div class="event">
-            <div class="title">Workshops and Talks</div>
-            <div class="description">
-               <p><span class="date">Mar 13th:</span> SPARKIGNITE anounce.</p>
-               <p><span class="date">Mar 16th:</span> Guidance Session.</p>
-            </div>
-         </div>
-         <div class="event">
-            <div class="title">Learn and Build</div>
-            <div class="description">
-               <p class="empty"></p>
-               <p class="secondary"><span class="date">Mar 17th:</span> Submission Open.</p>
-               <p class="empty"></p>
-            </div>
-         </div>
-         <div class="event">
-            <div class="title">Solution Evaluations 1</div>
-            <div class="description">
-               <p><span class="date">Mar 21th:</span> Submissions Close.</p>
-               <p class="empty"></p>
-            </div>
-         </div>
-         <div class="event">
-            <div class="title">Mentorship Phase</div>
-            <div class="description">
-               <p><span class="date">Apr 01st:</span> Top 3 announced.</p>
-               <p class="empty"></p>
-            </div>
-         </div>
-         <div class="event last">
-            <div class="title">Traning Session announce</div>
-            <div class="description">
-               <p><span class="date">Apr 06th:</span> Training session starts</p>
-               <p class="secondary"><span class="date">Apr 10th:</span>Training session ends</p>
-               <p class="last-p"><span class="date">Aug 03:</span> Top 3 Winners Announced.</p>
-            </div>
+   <div class="timeline">
+      <div class="container left">
+         <div class="content">
+            <h2>Workshops and Talk</h2>
+            <p>
+               <span class="date">Mar 13th:</span> SPARKIGNITE anounce.
+            </p>
+            <p>
+               <span class="date">Mar 16th:</span> Guidance Session.
+            </p>
+            <p class="description">
+               <!-- write somthing like program registeration -->
+               Join us for a workshop on the basics of web development. We will be covering HTML, CSS, and JavaScript.
+
+            </p>
+
          </div>
       </div>
-   </section>
+      <div class="container right">
+         <div class="content">
+            <h2>
+               Learn and Build
+            </h2>
+            <p class="empty"></p>
+            <p class="secondary"><span class="date">Mar 17th:</span> Submission Open.</p>
+            <p>
+               <!-- write somthing about Learn and Build knowledge -->
+               You will learn how to build a website from scratch. We will be covering HTML, CSS, and JavaScript.
+            </p>
+            <p class="empty"></p>
+
+         </div>
+      </div>
+      <div class="container left">
+         <div class="content">
+            <h2>
+               Solution Evaluations 1
+            </h2>
+            <p>
+               <span class="date">Mar 21th:</span> Submissions Close.
+            </p>
+            <p>
+               <!-- write somthing about Solution Evaluations 1 -->
+               Here we will be evaluating the solutions submitted by the participants.
+            </p>
+            <p class="empty"></p>
+         </div>
+      </div>
+      <div class="container right">
+         <div class="content">
+            <h2>
+               Mentorship Phase
+            </h2>
+            <p>
+               <span class="date">Apr 01st:</span> Top 3 announced.
+            </p>
+            <p>
+               Mentors will be assigned to the top 3 participants to help them improve their solutions.
+            </p>
+            <p class="empty"></p>
+
+         </div>
+      </div>
+      <div class="container left">
+         <div class="content">
+            <h2>
+               Traning Session announce
+            </h2>
+            <p>
+               <span class="date">Apr 06th:</span> Training session starts
+            </p>
+
+            <p class="secondary"><span class="date">Apr 12th:</span>Training session ends</p>
+         </div>
+      </div>
+
+   </div>
 
    <section class="mentors">
       <h1 data-aos="zoom-in" class="section-title"><span class="blue">#Event</span> Mentors</h1>
-      <div class="swiper mentorsSwiper">
-         <div class="swiper-container mentorsSwiper">
-            <div class="swiper-wrapper">
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <!-- <img src="./img/mentor2.jpg" alt=""> -->
-                     <b>Dr. B. S. Kapre</b>
-                     <p>Hackathon Mentor</p>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <!-- <img src="./img/mentor1.jpg" alt=""> -->
-                     <b>Dr. M. R. Banwaskar</b>
-                     <p>GDSC Faculty Advisor</p>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <img src="./img/.jpg" alt="">
-                     <b>Nagesh S. Kharat</b>
-                     <p>GDSC Lead</p>
-                  </div>
-               </div>
+      <div class="mentorsdiv">
 
-            </div>
+         <div class="mentordetail">
+            <b>Dr. B. S. Kapre</b>
+            <p>Hackathon Mentor</p>
+         </div>
+
+         <div class="mentordetail">
+            <b>Dr. M. R. Banwaskar</b>
+            <p>GDSC Faculty Advisor</p>
+         </div>
+         <div class="mentordetail">
+            <b>Nagesh S. Kharat</b>
+            <p>GDSC Lead</p>
          </div>
       </div>
 
    </section>
-<!-- 
-   <div id="workshops"></div>
-   <section class="workshops">
-      <h1 data-aos="zoom-in" class="section-title"><span class="red">#Event</span> Workshops</h1>
-      <div class="workshops-grid">
-         <div class="workshop">
-            <img src="assets/workshop.png" alt="">
-            <div class="workshop-info">
-               <h2 class="title">Full Stack Development</h2>
-               <b>Trainer:</b>
-               <b class="extra-bold">XYZ</b>
-               <p>XYZ<br>XYX<br>XYZ</p>
-            </div>
-         </div>
-         <div class="workshop">
-            <img src="assets/workshop.png" alt="">
-            <div class="workshop-info">
-               <h2 class="title">AI/ML</h2>
-               <b>Trainer:</b>
-               <b class="extra-bold">XYZ</b>
-               <p>1CS Student<br>Ui/ux manger at gdsc<br>graphic designer</p>
-               <p>XYZ<br>XYX<br>XYZ</p>
-            </div>
-         </div>
-         <div class="workshop">
-            <img src="assets/workshop.png" alt="">
-            <div class="workshop-info">
-               <h2 class="title">Android Development</h2>
-               <b>Trainer:</b>
-               <b class="extra-bold">XYZ</b>
-               <p>1CS Student<br>Ui/ux manger at gdsc<br>graphic designer</p>
-               <p>XYZ<br>XYX<br>XYZ</p>
-            </div>
-         </div>
-         <div class="workshop">
-            <img src="assets/workshop.png" alt="">
-            <div class="workshop-info">
-               <h2 class="title">DBMS</h2>
-               <b>Trainer:</b>
-               <b class="extra-bold">XYZ</b>
-               <p>1CS Student<br>Ui/ux manger at gdsc<br>graphic designer</p>
-               <p>XYZ<br>XYX<br>XYZ</p>
-            </div>
-         </div>
-      </div>
-   </section> -->
-
-
-
-
-   <!-- <div id="sponsors"></div>
-   <section class="sponsors">
-      <h1 data-aos="zoom-in" class="section-title"><span class="yellow">#Event</span> Co-Ordinator's</h1>
-      <div class="swiper sponsorsSwiper">
-         <div class="swiper-container sponsorsSwiper">
-            <div class="swiper-wrapper">
-               <div class="swiper-slide">
-                  <div class="sponsor "><img src="./img/saurabh1.jpg" alt=""></div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="sponsor nagesh"><img src="./img/nagesh.jpg" alt=""></div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="sponsor tushar"><img src="./img/tushar.jpg" alt=""></div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="sponsor rudrani"><img src="./img/rudrani.jpg" alt=""></div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="sponsor akshada"><img src="./img/akshada.jpg" alt=""></div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="sponsor aboli"><img src="./img/aboli.jpg" alt=""></div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="sponsor varad"><img src="./img/varad.jpg" alt=""></div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section> -->
 
    <section class="mentors">
       <h1 data-aos="zoom-in" class="section-title"><span class="blue">#Event</span> Co-ordinator's</h1>
-      <div class="swiper mentorsSwiper">
-         <div class="swiper-container mentorsSwiper">
-            <div class="swiper-wrapper">
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <!-- <img src="./img/mentor2.jpg" alt=""> -->
-                     <b>Rudrani Dachawar</b>
-                     <p>Technical Team</p>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <!-- <img src="./img/mentor1.jpg" alt=""> -->
-                     <b>Nagesh Kharat</b>
-                     <p>GDSC Lead</p>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <!-- <img src="./img/mentor1.jpg" alt=""> -->
-                     <b>Saurabh Pawar</b>
-                     <p>Technical Team</p>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <!-- <img src="./img/mentor1.jpg" alt=""> -->
-                     <b>Akshada Zinzurde</b>
-                     <p>Technical Team</p>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <!-- <img src="./img/mentor1.jpg" alt=""> -->
-                     <b>Tushar Gatthewar</b>
-                     <p>Technical Team</p>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <!-- <img src="./img/mentor1.jpg" alt=""> -->
-                     <b>Aboli More</b>
-                     <p>Technical Team</p>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <!-- <img src="./img/mentor1.jpg" alt=""> -->
-                     <b>Varad Jinturkar</b>
-                     <p>Management Team</p>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <!-- <img src="./img/mentor1.jpg" alt=""> -->
-                     <b>Sanskruti Giram</b>
-                     <p>Techninal Team</p>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <!-- <img src="./img/mentor1.jpg" alt=""> -->
-                     <b>Sanskruti More</b>
-                     <p>Management Team</p>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <!-- <img src="./img/mentor1.jpg" alt=""> -->
-                     <b>Aditi Bandewar</b>
-                     <p>Management Team</p>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <!-- <img src="./img/mentor1.jpg" alt=""> -->
-                     <b>Vidhisha Lahoti</b>
-                     <p>Management Team</p>
-                  </div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="mentor">
-                     <!-- <img src="./img/mentor1.jpg" alt=""> -->
-                     <b>Rushikesh Yemul</b>
-                     <p>Management Team</p>
-                  </div>
-               </div>
-              
-
-            </div>
+      <div class="mentorsdiv">
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor2.jpg" alt=""> -->
+            <b>Rudrani Dachawar</b>
+            <p>Technical Team</p>
          </div>
-      </div>
 
-
-
-   <!-- <div id="sponsors"></div>
-   <section class="sponsors">
-      <h1 data-aos="zoom-in" class="section-title"><span class="yellow">#Event</span> Sponsors</h1>
-      <div class="swiper sponsorsSwiper">
-         <div class="swiper-container sponsorsSwiper">
-            <div class="swiper-wrapper">
-               <div class="swiper-slide">
-                  <div class="sponsor "><img src="assets/sponsor-techno.png" alt=""></div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="sponsor sonatrach"><img src="assets/sponsor-sonatrach.png" alt=""></div>
-               </div>
-               <div class="swiper-slide">
-                  <div class="sponsor ifri"><img src="assets/sponsor-ifri.png" alt=""></div>
-               </div>
-            </div>
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor1.jpg" alt=""> -->
+            <b>Nagesh Kharat</b>
+            <p>GDSC Lead</p>
          </div>
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor1.jpg" alt=""> -->
+            <b>Saurabh Pawar</b>
+            <p>Technical Team</p>
+         </div>
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor1.jpg" alt=""> -->
+            <b>Pavan Kamthane</b>
+            <p>Technical Team</p>
+         </div>
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor1.jpg" alt=""> -->
+            <b>Vedant Kahalekar</b>
+            <p>Technical Team</p>
+         </div>
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor1.jpg" alt=""> -->
+            <b>Atharva Inamdar</b>
+            <p>Technical Team</p>
+         </div>
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor1.jpg" alt=""> -->
+            <b>Akshada Zinzurde</b>
+            <p>Technical Team</p>
+         </div>
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor1.jpg" alt=""> -->
+            <b>Tushar Gatthewar</b>
+            <p>Technical Team</p>
+         </div>
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor1.jpg" alt=""> -->
+            <b>Aboli More</b>
+            <p>Technical Team</p>
+         </div>
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor1.jpg" alt=""> -->
+            <b>Varad Jinturkar</b>
+            <p>Management Team</p>
+         </div>
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor1.jpg" alt=""> -->
+            <b>Sanskruti Giram</b>
+            <p>Techninal Team</p>
+         </div>
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor1.jpg" alt=""> -->
+            <b>Sanskruti More</b>
+            <p>Management Team</p>
+         </div>
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor1.jpg" alt=""> -->
+            <b>Aditi Bandewar</b>
+            <p>Management Team</p>
+         </div>
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor1.jpg" alt=""> -->
+            <b>Vidhisha Lahoti</b>
+            <p>Management Team</p>
+         </div>
+         <div class="mentordetail">
+            <!-- <img src="./img/mentor1.jpg" alt=""> -->
+            <b>Rushikesh Yemul</b>
+            <p>Management Team</p>
+         </div>
+
+
+
       </div>
-   </section> -->
+   </section>
 
 
-   <!-- <section class="contact">
-      <h1 data-aos="zoom-in" class="section-title"><span class="blue">#Contact</span> us</h1>
-      <p>We are here for you! how can we help you ?</p>
-      <form action="">
-         <input type="text" placeholder="Enter your name">
-         <input type="email" placeholder="Enter your email adress">
-         <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
-         <button type="submit" class="button">Submit</button>
-      </form>
-   </section> -->
+
+
+
    <section class="contact">
       <h1 data-aos="zoom-in" class="section-title"><span class="blue">#Contact</span> us</h1>
       <h5>E-mail: gdsc.mgmcen@gmail.com</h5>
-   </form>
-</section>
+      </form>
+   </section>
 
    <footer>
-      <div class="credits">Copyright @ <span>< Team <b><g>G</g><d>D</d><s>S</s><c>C</c> ></b></Nagesh></span> all rights reserved | 2024. </div>
+      <div class="credits">Copyright @ <span>
+            < Team <b>
+               <g>G</g>
+               <d>D</d><s>S</s>
+               <c>C</c> ></b></Nagesh>
+         </span> all rights reserved | 2024. </div>
       <img src="assets/gdsc_footer.png" alt="">
       <div class="social">
-         <a href="https://www.linkedin.com/company/google-developer-students-club-mgmcen/" target="_blank" rel="noopener noreferrer">
+         <a href="https://www.linkedin.com/company/google-developer-students-club-mgmcen/" target="_blank"
+            rel="noopener noreferrer">
             <img src="./linkedin.svg" alt="">
             <!-- <h6><span>linkedin</span></h6> -->
          </a>
-         <a href="https://instagram.com/gdsc_mgmcoe_nanded?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+         <a href="https://instagram.com/gdsc_mgmcoe_nanded?igshid=MzRlODBiNWFlZA==" target="_blank"
+            rel="noopener noreferrer">
             <img src="./instagram.svg" alt="">
             <!-- <h6><span>instagram</span></h6> -->
          </a>
-         <a href="https://gdsc.community.dev/mahatma-gandhi-missions-college-of-engineering/" target="_blank" rel="noopener noreferrer">
+         <a href="https://gdsc.community.dev/mahatma-gandhi-missions-college-of-engineering/" target="_blank"
+            rel="noopener noreferrer">
             <img class="social" src="./g.webp" alt="">
             <!-- <h6><span>community</span></h6> -->
          </a>

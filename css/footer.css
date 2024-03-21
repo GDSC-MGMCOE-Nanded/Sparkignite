@@ -1,0 +1,40 @@
+footer {
+    width: 100%;
+    background-color: #481f4e;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .credits {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer>img {
+    width: 350px;
+}
+
+footer .social {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 400px) {
+    footer>img {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    footer>img {
+        width: 200px;
+    }
+}
